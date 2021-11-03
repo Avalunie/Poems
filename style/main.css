@@ -22,6 +22,7 @@ html{
     background: transparent;  /* опционально */
 }
 body{
+	overflow-x: hidden;
 	margin: 0;
 	color: #edd9b9;
 	background-color: var(--main-color);
