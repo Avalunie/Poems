@@ -19,6 +19,7 @@ html{
     background: transparent;  /* опционально */
 }
 body{
+	margin: 0;
 	color: #edd9b9;
 	background-color: var(--main-color);
 	font-weight: lighter;
@@ -26,7 +27,8 @@ body{
 	font-size: 24px; 
 	font-family: "OldStandardTT-Regular";
 
-	height: 100%;	
+	height: 100%;
+	width: 100%;	
 }
 a{
 	text-decoration: none;
@@ -45,6 +47,7 @@ h1{
 }
 .all{
 	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -54,7 +57,7 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
 
-	height: 98vh;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -156,8 +159,26 @@ video{
 		font-size: 40px;
 	}
     .topNubex {
-		font-size: 28px;
+		font-size: 22px;
 		right: 20px;
 		bottom: 20px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+	body{
+		font-size: 14px;
+		letter-spacing: 3px;
+	}
+	h1{
+		letter-spacing: 10px;
+		font-size: 32px;
+	}
+    .topNubex {
+		font-size: 20px;
+		right: 10px;
+		bottom: 10px;
 	}
 }
