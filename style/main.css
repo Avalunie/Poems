@@ -23,6 +23,7 @@ html{
 }
 body{
 	overflow-x: hidden;
+	
 	margin: 0;
 	color: #edd9b9;
 	background-color: var(--main-color);
@@ -168,12 +169,12 @@ video{
 		font-size: 40px;
 	}
     .topNubex {
-		font-size: 22px;
-		right: 20px;
-		bottom: 20px;
+		font-size: 10px;
+		right: 5px;
+		bottom: 5px;
 	}
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 420px) {
 	[class*="col-"] {
 		width: 100%;
 	}
@@ -186,8 +187,8 @@ video{
 		font-size: 32px;
 	}
     .topNubex {
-		font-size: 20px;
-		right: 10px;
-		bottom: 10px;
+		font-size: 10px;
+		right: 5px;
+		bottom: 5px;
 	}
 }
