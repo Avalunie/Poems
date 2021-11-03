@@ -9,10 +9,13 @@
 	box-sizing: border-box;
 }
 html{
+   	/*height: -webkit-fill-available;*/
+
 	scroll-behavior: smooth;
 
 	-ms-overflow-style: none;  /* IE 10+ */
     scrollbar-width: none; /* Firefox */
+
 }
 ::-webkit-scrollbar { /* chrome based */
     width: 0px;  /* ширина scrollbar'a */
@@ -58,6 +61,10 @@ h1{
     background-size: cover;
 
 	height: 100vh;
+	 min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+
 	width: auto;
 	display: flex;
 	justify-content: center;
